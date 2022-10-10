@@ -1,0 +1,20 @@
+
+
+Normal form, using Turbo:
+
+<%= form_tag 'welcome' do %>
+  This is a useless field:
+  <%= text_field_tag :useless_field %>
+  <%= submit_tag %>
+
+<% end %>
+
+
+<br>
+Another form using <code>data-turbo=false</code>
+<%= form_tag 'welcome', 'data-turbo': false do %>
+  This is a useless field:
+  <%= text_field_tag :useless_field %>
+  <%= submit_tag %>
+
+<% end %>
